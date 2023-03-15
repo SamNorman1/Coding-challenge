@@ -1,0 +1,11 @@
+var array = [15, 21, 95, 1, 18, 95, 99, 99, 18, 15];
+array.sort(function(a, b){return a-b});
+for (let i = 0; i < array.length; i++) {
+} 
+
+uniqueArray = array.filter(function(item, pos, self) {
+    array.sort(function(a, b){return a-b});
+    return self.indexOf(item) == pos;
+    
+})
+console.log(uniqueArray);
